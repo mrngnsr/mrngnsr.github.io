@@ -130,19 +130,6 @@
     <button type="submit" style="padding:.6rem 1.2rem;border:none;border-radius:.6rem;background:#0ea5e9;color:white;font-weight:bold">Weiter</button>
   </form>
 </div>
-
-  <script>
-  function checkPassword() {
-    const pw = document.getElementById('pass').value;
-    const hashed = btoa(pw); // Base64-Verschlüsselung
-    if (hashed === 'ZGVtby1iZXdlcmJ1bmc=') { // <- Base64 von "demo-bewerbung"
-      document.getElementById('lockscreen').style.display = 'none';
-    } else {
-      alert('Falsches Passwort');
-    }
-    return false;
-  }
-</script>
   
   <main id="main" class="wrap">
     <!-- Hero -->
